@@ -8,7 +8,7 @@ RUN mkdir /opt/blog
 WORKDIR /opt/blog
 
 RUN git clone https://github.com/promiseowolabi/blog.git
-RUN pip install -r requirements.txt
+RUN pip install flask beautifulsoup4 micawber pygments markdown peewee
 
 EXPOSE 8080
 
