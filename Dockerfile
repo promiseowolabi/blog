@@ -8,7 +8,7 @@ RUN mkdir /opt/blog
 WORKDIR /opt/blog
 
 RUN git clone https://github.com/promiseowolabi/blog.git
-RUN pip install -r requirement.txt
+RUN pip install -r requirements.txt
 
 EXPOSE 8080
 
