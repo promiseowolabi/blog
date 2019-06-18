@@ -9,7 +9,5 @@ WORKDIR /opt
 RUN git clone https://github.com/promiseowolabi/blog.git
 RUN pip install flask beautifulsoup4 micawber pygments markdown peewee
 
-EXPOSE 5000
-
 WORKDIR /opt/blog
 CMD python app.py
