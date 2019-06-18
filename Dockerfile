@@ -4,12 +4,12 @@ RUN apt-get update -y
 RUN apt-get install python-pip -y
 RUN apt-get install git -y
 
-RUN mkdir /opt/blog
-WORKDIR /opt/blog
+WORKDIR /opt
 
 RUN git clone https://github.com/promiseowolabi/blog.git
 RUN pip install flask beautifulsoup4 micawber pygments markdown peewee
 
 EXPOSE 8080
 
+WORKDIR /opt/blog
 CMD python app.py
