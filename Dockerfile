@@ -12,4 +12,4 @@ RUN pip install flask beautifulsoup4 micawber pygments markdown peewee
 
 EXPOSE 8080
 
-CMD python ./app.py
+CMD python app.py
