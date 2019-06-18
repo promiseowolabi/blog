@@ -10,4 +10,6 @@ RUN git clone https://github.com/promiseowolabi/blog.git
 RUN pip install flask beautifulsoup4 micawber pygments markdown peewee
 
 WORKDIR /opt/blog
-CMD python app.py
+ENTRYPOINT [ "python" ]
+
+CMD [ "app.py" ]
